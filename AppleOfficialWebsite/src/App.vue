@@ -1,11 +1,19 @@
-<script setup>
-
-</script>
-
 <template>
+  <div id="globalheader">
+    <aside></aside>
+    <nav id="globalnav">
+      <div class="globalnav-content"></div>
+    </nav>
+  </div>
+  <main>
+    <section>section1</section>
+    <section>section2</section>
 
+    <section>section3</section>
+  </main>
+  <footer>footer</footer>
 </template>
 
-<style scoped>
+<script setup></script>
 
-</style>
+<style scoped></style>
