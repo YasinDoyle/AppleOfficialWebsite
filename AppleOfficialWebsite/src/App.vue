@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import HeaderView from "@/view/HeaderView.vue";
+import HeaderView from "@/views/HeaderView.vue";
 </script>
 
 <style scoped></style>

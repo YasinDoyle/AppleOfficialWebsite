@@ -16,10 +16,9 @@
             <div
               class="globalnav-item globalnav-item-store globalnav-item-menu globalnav-item-submenu"
             >
-              <ul class="globalnav-submenu-trigger-group">
-                <li class="globalnav-submenu-trigger-item"></li>
-                <li class="globalnav-submenu-trigger-item"></li>
-              </ul>
+              <router-link :to="item.link" class="nav-link">
+                {{ item.text }}</router-link
+              >
             </div>
           </li>
           <li class="globalnav-item globalnav-search shift-0-1"></li>
@@ -39,13 +38,21 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-navbarSubmenuInfo = ref({
+var navbarSubmenuInfo = ref({
   Store: {
-    Shop: {},
-    QuickLinks: {},
-    ShopSpecialStore: {},
+    text: "Store",
+    link: "/store",
+    subMenu: {
+      Shop: {},
+      QuickLinks: {},
+      ShopSpecialStore: {},
+    },
   },
-  Mac: {},
+  Mac: {
+    text: "Mac",
+    link: "/mac",
+    subMenu: {},
+  },
   iPad: {},
   iPhone: {},
   Watch: {},
@@ -58,4 +65,10 @@ navbarSubmenuInfo = ref({
 });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.nav-link {
+  color: #f80c0c;
+  font-size: 16px;
+  font-weight: 500;
+}
+</style>
