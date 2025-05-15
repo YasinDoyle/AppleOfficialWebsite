@@ -53,19 +53,66 @@ var navbarSubmenuInfo = ref({
     link: "/mac",
     subMenu: {},
   },
-  iPad: {},
-  iPhone: {},
-  Watch: {},
-  Vision: {},
-  AirPods: {},
-  TVHome: {},
-  Entertainment: {},
-  Accessories: {},
-  Support: {},
+  iPad: {
+    text: "iPad",
+    link: "/ipad",
+    subMenu: {},
+  },
+  iPhone: {
+    text: "iPhone",
+    link: "/iphone",
+    subMenu: {},
+  },
+  Watch: {
+    text: "Watch",
+    link: "/watch",
+    subMenu: {},
+  },
+  Vision: {
+    text: "Vision",
+    link: "/vision",
+    subMenu: {},
+  },
+  AirPods: {
+    text: "AirPods",
+    link: "/airpods",
+    subMenu: {},
+  },
+  TVHome: {
+    text: "TV&Home",
+    link: "/tv&home",
+    subMenu: {},
+  },
+  Entertainment: {
+    text: "Entertainment",
+    link: "/entertainment",
+    subMenu: {},
+  },
+  Accessories: {
+    text: "Accessories",
+    link: "/accessories",
+    subMenu: {},
+  },
+  Support: {
+    text: "Support",
+    link: "/support",
+    subMenu: {},
+  },
 });
 </script>
 
 <style scoped lang="scss">
+.globalnav-list {
+  cursor: default;
+  margin: 0 -8px;
+  width: auto;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  list-style: none;
+}
+
 .nav-link {
   color: #f80c0c;
   font-size: 16px;
